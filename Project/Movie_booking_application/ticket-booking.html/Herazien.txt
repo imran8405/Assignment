@@ -1,0 +1,170 @@
+class InternalMesg 
+{
+    public void sent_msg()
+    {
+		System.out.println(" msg are sent  successfully");
+	
+     }
+	
+	public void rec_msg()
+	{
+		System.out.println(" msg are rec Successfully");
+	}
+}
+
+
+class whatsapp extends InternalMesg
+{
+	
+	public void sent_msg()  // Inherited Method
+    	{
+		System.out.println(" msg are sent  successfully");
+	
+     }	
+	
+	public void rec_msg() // Overridden Method
+	{
+		System.out.println(" Whatsapp rec some megs...");
+	}
+
+	public void status()  // Spc method
+	{
+		System.out.println(" files uploded done");
+	}
+	
+
+}
+
+
+class Test
+{
+		public static void main(String args[])
+		{
+			whatsapp w = new whatsapp();
+				
+				InternalMsg i1 = new whatsapp();
+				// whatsapp w1    = new InternalMsg();
+
+			w.sent_msg();
+			w.rec_msg();
+			w.status();
+
+
+		{
+}
+
+import java.util.*;
+class Test
+{
+
+	static boolean isPalindrome(int s)
+	{
+		
+		int res =0 ;
+		
+		while(n >0)
+		{
+			int digit = n % 10;
+			res +=res 
+		}
+
+			
+		
+	}
+
+
+	int i = 5;
+	 b = i++;
+	 c = ++i;
+
+
+
+	static int factorial( int n )
+	{
+		int res =1;
+
+		for(int i =n ; i>0; i--)
+		{
+			res = res *i;
+		}
+		
+		return res;
+		
+	}
+
+	static int sumDigit(int n )
+	{
+		int sum =0;
+		
+		while(n > 0)
+		{
+			int digit = n %10;
+			 sum  = sum + digit;
+			 n = n/10;
+		}
+		
+		return sum;
+	}
+	
+	
+
+
+	public static void main(String args[])
+	{
+		Scanner os = new Scanner(System.in);
+		
+		int s = 12321;
+		int n = 151;
+		
+		System.out.println( isPalindrome(s);
+
+		System.out.println( factorial(n) );
+		
+		System.out.println(sumDigit(n)) ;
+
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

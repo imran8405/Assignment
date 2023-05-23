@@ -1,0 +1,46 @@
+class Employee
+{
+	private String name;
+	private int salary;
+	private String Desg;
+	
+	Employee(String name, int slary, String Desg)  // Constructor
+	{
+		this.name = name;
+		this.salary = salary;
+		this.Desg = Desg;
+	}
+
+	public  String getName()
+	{
+		return name;
+	}
+	
+	public int getSalary()
+	{
+		return Salary;
+	}
+
+	public String getdesg()
+	{
+		return name;
+	}
+
+	
+}
+
+class Test
+{
+	public static void main(String args[])
+	{
+		Employee e1 = new Employee("Imran" , 60000, HR);
+		
+		
+		System.out.e1.getName();
+		e1.getSalary();
+		e1.getdesg();
+	}
+	
+	
+}
+

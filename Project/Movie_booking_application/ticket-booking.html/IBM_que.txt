@@ -1,0 +1,26 @@
+import operator
+def partitionele(strop,resnum,lenth,lst):
+    if lenth % 2 != 0:
+        return 'Invalid Input'
+    d = {'+':operator.add,'-':operator.sub,'*':operator.mul,'/':operator.truediv}
+    res = []
+    a = []
+    for i in range(lenth-1):
+        for j in range(i+1,lenth):
+            if d[strop](lst[i],lst[j]) == resnum or d[strop](lst[j],lst[i]) == resnum:
+                if lst[i] not in a and lst[j] not in a:
+                    res.append([lst[i],lst[j]])
+                    a.extend([lst[i],lst[j]])
+                    
+    if res == []:
+        return 'NULL'
+    else:
+        return res
+                    
+        
+
+strop = input()
+resnum = int(input())
+lenth = int(input())
+lst = list(map(int,input().split()))
+print(partitionele(strop,resnum,lenth,lst))
